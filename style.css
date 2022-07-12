@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Source+Code+Pro&display=swap');
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px black;
+    color:white;
+    
+}
+
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: row;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff,#c8f0ff, #ace9ff ,#3eccff, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fff, #c9f1ff, #ace9ff, #3eccff, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+
+h1, a{
+    font-weight: bold;
+}
+
+/*---NAVBAR---*/
+
+.navbar ul li{
+    display: flex;
+    flex-direction:column ;
+    list-style-type: none;
+    font-size: 2rem;
+    font-weight: bold;
+    gap: 80px;  
+    margin-left: 30PX;
+}
+
+.navbar ul li a{
+    color:#fff;
+    font-size: 2rem;
+    transition:font-size 0.3s ease-out;
+    
+}
+
+.navbar ul li a:hover{
+    font-size: 2.5rem;
+}
+.navbar{
+    z-index: 10;       
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 20%;
+    position: sticky;
+    top: 0;
+    
+}
+
+/*---LANDINGS-PAGE---*/
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.hero-tekst{
+    height: 50vh;
+    width: 50%;
+    margin: 25vh 25% 25vh 25%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 20px;
+}
+
+.hero-tekst p{
+    font-family: 'Source Code Pro';
+}
+
+.hero-tekst a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 50px;
+    transition: width 0.3s, height 0.3s;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:black;
+    text-shadow: none;
+    margin-top: 10px;
+}
+.hero-tekst a:hover{
+    width:160px;
+    height: 65px;
+}
+
+.main{
+    width: 80%;
+    
+}
+
+/*---OVER-MIJ---*/
+
+
+.overmij{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overmij-items{
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    width: 70%;
+    margin-top: 15vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.overmij img{
+    border-radius: 10px;
+    border-top-left-radius:0 ;
+    border-bottom-left-radius:0 ;
+}
+
+.overmij-tekst{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 60px;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*projecten*/
+
+.projecten{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.projecten-tekst{
+    height: 50vh;
+    width: 50%;
+    margin: 25vh 25% 25vh 25%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 20px;
+}
+
+.projecten-tekst p{
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 70%;
+    
+}
+
+.projecten-tekst a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 50px;
+    transition: width 0.3s, height 0.3s;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:black;
+    text-shadow: none;
+    margin-top: 10px;
+}
+.projecten-tekst a:hover{
+    width:160px;
+    height: 65px;
+}
+
+/* contact */
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.contact-items{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.contact-items a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 50px;
+    transition: width 0.3s, height 0.3s;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:black;
+    text-shadow: none;
+    margin-bottom: 10px;
+}
+
+.contact-items a:hover{
+    width:160px;
+    height: 65px;
+}
+
+
+.li{
+    display: flex;
+    width: 60%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: end;
+    align-items:center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    gap: 20px;
+    background-image: url("img/logo-li.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.gh{
+    display: flex;
+    width: 60%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: end;
+    align-items:center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    gap: 20px;
+    background-image: url("img/logo-gh.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.mail{
+    display: flex;
+    width: 60%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: end;
+    align-items:center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    gap: 20px;
+    background-image: url("img/logo-mail.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+
+
